@@ -1,0 +1,11 @@
+package ma.projet.dao;
+
+import java.util.List;
+
+public interface IDao<T> {
+    T create(T t);
+    T update(T t);
+    void delete(T t);
+    T findById(Integer id);
+    List<T> findAll();
+}
